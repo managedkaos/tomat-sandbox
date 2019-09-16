@@ -6,5 +6,9 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", path: "provision.sh"
 end
 puts "-------------------------------------------------"
-puts "URL   : http://#{guest_ip}"
+puts "Tomcat   : http://#{guest_ip}:8080"
+puts "Docs     : http://#{guest_ip}:8080/docs/"
+puts "Examples : http://#{guest_ip}:8080/examples/"
+puts "Manager  : http://#{guest_ip}:8080/manager/"
+puts "Hosts    : http://#{guest_ip}:8080/host-manager/"
 puts "-------------------------------------------------"
