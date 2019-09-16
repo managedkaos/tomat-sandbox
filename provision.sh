@@ -21,6 +21,9 @@ apt-get install -y \
     tomcat8-user \
     tomcat8
 
+cp /vagrant/tomcat-users.xml /etc/tomcat8/tomcat-users.xml
+systemctl restart tomcat8
+
 echo "===================================================="
 echo "== $(date) - Provisioning complete!"
 echo "===================================================="
